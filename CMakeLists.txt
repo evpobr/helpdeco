@@ -16,6 +16,7 @@ if(MSVC)
     PRIVATE
       _CRT_SECURE_NO_WARNINGS
       _CRT_NONSTDC_NO_WARNINGS
+      _USE_32BIT_TIME_T
   )
 endif()
 
