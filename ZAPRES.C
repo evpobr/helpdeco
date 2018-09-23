@@ -17,7 +17,9 @@ commercially. No fees may be charged on distributing.
 
 #include <stdio.h>
 #include <stdlib.h>
+#ifdef HAVE_DIR_H
 #include <dir.h>
+#endif
 #include <string.h>
 
 int backup(FILE *f,char *oldname)
