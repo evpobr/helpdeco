@@ -229,6 +229,9 @@ des Urheberrechtes bedeuten.
 The use of parts of decompiled help files may constitute a violation of
 copyright law.
 
+Version 2.2:
+Fix compilation on newer Visual Studio versions
+
 Version 2.1:
 macros may contain rtf meta characters
 Win95 topic names may contain (nearly) all characters
