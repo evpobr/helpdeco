@@ -16,7 +16,7 @@ typedef struct { char a,b,c; } align;
 #error Compile bytealigned !
 #endif
 #else
-#pragma pack(1)
+#pragma pack(push, 1)
 #endif
 
 typedef enum {FALSE,TRUE} BOOL;
@@ -650,5 +650,9 @@ extern void CatalogDump(FILE *HelpFile);
 extern void CTXOMAPDump(FILE *HelpFile);
 extern void LinkDump(FILE *HelpFile);
 extern void AnnotationDump(FILE *HelpFile,long FileLength,char *name);
+
+#ifndef __TURBOC__
+#pragma pack(pop)
+#endif
 
 #endif
