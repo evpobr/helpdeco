@@ -3,12 +3,12 @@ HELPDECO - Utility-Programm zum Zerlegen von Windows Hilfedateien
 HELPDECO - utility program to dissect Windows help files
 
 HELPDECO zerlegt HLP-Hilfedateien von Windows 3.0, 3.1, 3.11 und '95 und
-viele MVB-Dateien des Multimedia-Viewers in alle fÅr den jeweiligen
+viele MVB-Dateien des Multimedia-Viewers in alle f√ºr den jeweiligen
 Hilfecompiler HC30, HC31, HCP, HCW, HCRTF, WMVC, MMVC oder MVC zum
-erneuten Zusammenbau erforderlichen Dateien. Dazu gehîren:
-HPJ - die Projektdatei, als Parameter fÅr den Hilfecompiler anzugeben
-MVP - die Multimediaprojektdatei, als Parameter fÅr den MM-Compiler
-RTF - die Textdatei mit dem gesamten Hilfetext und allen Fu·noten
+erneuten Zusammenbau erforderlichen Dateien. Dazu geh√∂ren:
+HPJ - die Projektdatei, als Parameter f√ºr den Hilfecompiler anzugeben
+MVP - die Multimediaprojektdatei, als Parameter f√ºr den MM-Compiler
+RTF - die Textdatei mit dem gesamten Hilfetext und allen Fu√ünoten
 PH  - die Phrasen-Datei (wie sie auch vom Hilfecompiler erzeugt wird)
 ICO - ein eventuell der Hilfedatei zugeordnetes Icon
 BMP/WMF/SHG/MRB - alle Bilder in Dateien mit passendem Format
@@ -28,9 +28,9 @@ Baggage - all baggage files contained in help file
 
 HELPDECO wird von der MS-DOS Kommandozeile aus mit dem Namen der zu
 bearbeitenden Datei, eventuell dem Namen einer internen Datei und
-eventuellen Optionen aufgerufen. HELPDECO lÑuft von der Kommandozeile
+eventuellen Optionen aufgerufen. HELPDECO l√§uft von der Kommandozeile
 von Windows 95 oder Windows NT als 32-bit Applikation zur Bearbeitung
-grî·erer Hilfedateien.
+gr√∂√üerer Hilfedateien.
 Call HELPDECO from MS-DOS command line. Supply name of help file to use,
 optional name of internal file, and options if appropriate.
 HELPDECO runs from Windows 95 or Windows NT command line as 32-bit
@@ -41,15 +41,15 @@ Zeigt Benutzungshinweise
 Displays usage
 
 HELPDECO helpfilename
-Zerlegt die Hilfedatei in alle zum erneuten Zusammenbau benîtigten Dateien.
-Diese Dateien werden im aktuellen (mîglichst leeren) Verzeichnis abgelegt.
-Existierende Dateien werden ohne RÅckfrage Åberschrieben wenn die Option /y
+Zerlegt die Hilfedatei in alle zum erneuten Zusammenbau ben√∂tigten Dateien.
+Diese Dateien werden im aktuellen (m√∂glichst leeren) Verzeichnis abgelegt.
+Existierende Dateien werden ohne R√ºckfrage √ºberschrieben wenn die Option /y
 angegeben wird.
 Decompiles help file into all sources needed for a rebuild. All files are
 created in current directory (should be empty). Existing files will be
 overwritten without asking if option /y was specified.
 
-Hinter dem Kommando kînnen durch Leerzeichen abgesetzte Optionen angeben
+Hinter dem Kommando k√∂nnen durch Leerzeichen abgesetzte Optionen angeben
 werden:
 Options may be appended to the command, separated using blanks, as follows:
 
@@ -61,9 +61,9 @@ May be used to stop parsing macros for topic names. Help compiler will emit
 Warning 4131.
 
 /b
-kann verwendet werden, um das Auflîsen von Browse-Sequenzen zu verhindern,
-wenn dabei Probleme auftreten. Hilfequelltextdatei enthÑlt dann keine +
-Fu·noten.
+kann verwendet werden, um das Aufl√∂sen von Browse-Sequenzen zu verhindern,
+wenn dabei Probleme auftreten. Hilfequelltextdatei enth√§lt dann keine +
+Fu√ünoten.
 May be used to stop resolving browse sequences. Help source file than
 contains no + footnotes.
 
@@ -71,8 +71,8 @@ contains no + footnotes.
 Schaltet das zeitintensive Raten von Kontextnamen aus. Anzuwenden wenn
 HELPDECO 'no context ids found' meldet oder man nicht an lesbaren
 Kontextnamen interessiert ist. Die Funktionsweise von HELPDECO wird dadurch
-nicht beeintrÑchtigt.
-Zum Raten versucht HELPDECO aus KapitelÅberschriften und SchlÅsselwîrten
+nicht beeintr√§chtigt.
+Zum Raten versucht HELPDECO aus Kapitel√ºberschriften und Schl√ºsselw√∂rten
 die Kontextnamen zu rekonstruieren, was bei einigen Hilfedateien sehr gut,
 bei anderen gar nicht funktioniert, je nach Hilfedateierstellungswerkzeug
 oder Arbeitsmethode des Hilfeautors.
@@ -85,11 +85,11 @@ at all on others, depending on autoring tool used or working method of help
 author.
 
 /i
-Wenn man sehen mîchte, welche Kontextnamen HELPDECO errÑt...
+Wenn man sehen m√∂chte, welche Kontextnamen HELPDECO err√§t...
 If you want to see which context ids are guessed by HELPDECO...
 
 /hprefix
-HELPDECO versucht aus KapitelÅberschriften und SchlÅsselwîrtern Kontextnamen
+HELPDECO versucht aus Kapitel√ºberschriften und Schl√ºsselw√∂rtern Kontextnamen
 zu erraten, wobei auch idh_ oder helpid_ vorangestellt werden.
 Wenn die Hilfedatei mit anderen bekannten Prefixen erstellt wurde, kann
 die Tabelle durch die Option /h prefix erweitert werden.
@@ -98,9 +98,9 @@ prefixed by idh_ or helpid_. If the help file was created using other
 prefixes, they may be added to the table using the /h prefix option.
 
 /a [annotationfilename.ANN]
-FÅgt zusÑtzlich alle Anmerkungen aus der angegebenen Anmerkungsdatei als
+F√ºgt zus√§tzlich alle Anmerkungen aus der angegebenen Anmerkungsdatei als
 Anmerkungen des Benutzers ANN in die RTF-Datei ein. Fehlt der annotation-
-filename, verwendet HELPDECO helpfilename.ANN dafÅr.
+filename, verwendet HELPDECO helpfilename.ANN daf√ºr.
 Adds all annotations from annotationfile as annotations of user ANN into
 RTF file. Default annotationfilename is helpfilename.ANN.
 
@@ -108,7 +108,7 @@ RTF file. Default annotationfilename is helpfilename.ANN.
 Zerteilt die Ausgabe alle n Seiten in eine eigene RTF Datei, z.B. zerlegt
   HELPDECO helpdemo /s 100
 die Datei helpdemo.hlp und erzeugt RTF-Dateien mit den Namen helpdem1.rtf,
-helpdem2.rtf,.. die jeweils hîchstens 100 Seiten enthalten.
+helpdem2.rtf,.. die jeweils h√∂chstens 100 Seiten enthalten.
 Splits output every n pages into a separate RTF file. For example
   HELPDECO helpdemo /s 100
 decompiles helpdeco.hlp and creates different RTF files helpdem1.rtf,
@@ -117,17 +117,17 @@ helpdem2.rtf,.. each containing no more than 100 topics.
 HELPDECO helpfilename /r
 Erzeugt aus der Hilfedatei eine RTF-Datei, die von WinWord geladen dasselbe
 Aussehen hat wie die von WinHelp angezeigten Hilfeseiten. Damit kann eine
-Hilfedatei komplett gedruckt oder weiterverarbeitet werden. ZusÑtzlich
+Hilfedatei komplett gedruckt oder weiterverarbeitet werden. Zus√§tzlich
 Option /n angeben, wenn an Kapitelgrenzen kein Seitenwechsel stattfinden soll.
 Converts help file into RTF file of same appearance if loaded into WinWord
 as if displayed by WinHelp. To print or work with complete content. Specify
 additional option /n, if no page breaks should separate topics.
 
 HELPDECO helpfilename /c
-Erzeugt aus der Hilfedatei eine *.CNT-Datei fÅr WinHlp32, die alle Kapitel
-mit öberschriften in der Reihenfolge enthÑlt, in der sie in der Hilfedatei
-auftreten. Die Datei mu· dann mit HCW 4.00 oder einem Texteditor in eine
-hierarchische Struktur Åberarbeitet werden.
+Erzeugt aus der Hilfedatei eine *.CNT-Datei f√ºr WinHlp32, die alle Kapitel
+mit √úberschriften in der Reihenfolge enth√§lt, in der sie in der Hilfedatei
+auftreten. Die Datei mu√ü dann mit HCW 4.00 oder einem Texteditor in eine
+hierarchische Struktur √ºberarbeitet werden.
 Generates a *.CNT file used by WinHlp32, containing all chapters that have
 titles assigned in the order they appear in the helpfile. This file should
 then be edited using HCW 4.00 or any text editor into a hierarchical order.
@@ -143,8 +143,8 @@ Lists all references to external help files and titles of topics that
 contained these references.
 
 HELPDECO helpfilename /p
-PrÅft Referenzen auf externe Hilfedateien. Die referenzierten Hilfedateien
-mÅssen fÅr HELPDECO zugreifbar sein. Dieser Aufruf erzeugt keine neuen
+Pr√ºft Referenzen auf externe Hilfedateien. Die referenzierten Hilfedateien
+m√ºssen f√ºr HELPDECO zugreifbar sein. Dieser Aufruf erzeugt keine neuen
 Dateien und modifiziert keine existierenden. Fehler werden auf stdout (den
 Bildschirm) geschrieben.
 Checks references to external help files. Referenced help file need to be
@@ -164,8 +164,8 @@ Displays hex dump of internal directory
 
 HELPDECO helpfilename "internalfilename"
 Zeigt die genannte interne Datei in einem passenden Format an, soweit die
-interne Datei anzeigbar ist, sonst als HexDump. Sie kînnen die Ausgabe in
-eine Datei umleiten durch anhÑngen von >outfile.
+interne Datei anzeigbar ist, sonst als HexDump. Sie k√∂nnen die Ausgabe in
+eine Datei umleiten durch anh√§ngen von >outfile.
 Displays internal file in appropriate format if known, else hex dump. You
 may redirect output into a file using >outfile.
 
@@ -195,20 +195,20 @@ HELPDECO wurde erstellt von / was written by
 Manfred Winterhoff, Geschw.-Scholl-Ring 17, 38444 Wolfsburg, Germany
 CIS 100326,2776
 
-Wenn Sie weitere Fragen, Probleme (oder Antworten!) haben, kînnen Sie
+Wenn Sie weitere Fragen, Probleme (oder Antworten!) haben, k√∂nnen Sie
 durch eine EMail an 100326.2776@compuserve.com mit mir in Kontakt treten.
 If you have more questions, problems (or answers!), please feel free to
 send me an EMail to 100326.2776@compuserve.com
 
-HELPDECO basiert auf HELPDUMP von Pete Davis verîffentlicht in:
+HELPDECO basiert auf HELPDUMP von Pete Davis ver√∂ffentlicht in:
 HELPDECO is based upon HELPDUMP from Pete Davis published in:
 The Windows Help File Format, Dr. Dobbs Journal, Sep/Oct 1993
 Thanks to Holger Haase, who did a lot of work on picture file formats.
-And thanks to JÅrgen MÅller for pointing out 32-bit differences.
+And thanks to J√ºrgen M√ºller for pointing out 32-bit differences.
 Thanks to Bent Lynggaard for the information on help file free lists
 and his contribution on context id guessing.
 
-HELPFILE.TXT enthÑlt eine Beschreibung des Windows Hilfedateiformats
+HELPFILE.TXT enth√§lt eine Beschreibung des Windows Hilfedateiformats
 wie HELPDECO es versteht und weiterer Dateiformate wie MRB/SHG.
 See HELPFILE.TXT for a description of the Windows help file format
 as parsed by HELPDECO and related file formats like MRB/SHG.
@@ -219,8 +219,8 @@ CompuServe: Dr. Dobbs Journal DDJFOR Undocumented Corner HELPDCxx.ZIP
 InterNet: ftp://gmutant.wrlc.org/pub/winhelp
 
 HELPDECO ist Freeware. Der Einsatz erfolgt auf eigene Gefahr. Kein
-Programmteil darf kommerziell verwendet werden. FÅr das Kopieren dÅrfen
-keine GebÅhren verlangt werden (Sharewarehandel Finger weg).
+Programmteil darf kommerziell verwendet werden. F√ºr das Kopieren d√ºrfen
+keine Geb√ºhren verlangt werden (Sharewarehandel Finger weg).
 HELPDECO is freeware. Use at your own risk. No part of the program may be
 used commercially. No fees may be charged on distributing the program
 (shareware distributors keep off).
