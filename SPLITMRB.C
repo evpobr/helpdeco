@@ -15,6 +15,7 @@ commercially. No fees may be charged on distributing.
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <assert.h>
 
 typedef enum {FALSE,TRUE} BOOL;
 
@@ -221,9 +222,7 @@ void PrintHotspotInfo(FILE *f)
 	unsigned long hash;
     }
     HOTSPOT;
-#if sizeof(HOTSPOT)!=15
-#error Compile byte aligned !
-#endif
+	assert(sizeof(HOTSPOT) == 15);
     HOTSPOT *hotspot;
     char name[80];
     char buffer[128];
